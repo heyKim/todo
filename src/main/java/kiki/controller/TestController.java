@@ -16,7 +16,7 @@ public class TestController {
 	@ResponseBody
 	@RequestMapping(value="/homeTest", method=RequestMethod.GET)
 	public String homeTest() {
-		String value = "Test webhook test again!!";
+		String value = "Test webhook test again...!!";
 		return value;
 	}
 	
