@@ -8,7 +8,7 @@ COPY gradle gradle
 # 웹 어플리케이션 소스 복사 
 COPY src src
 RUN chmod +x ./gradlew
-RUN ./gradlew bootJar
+RUN ./gradlew build
 
 # 베이스 이미지 
 FROM adoptopenjdk/openjdk11
