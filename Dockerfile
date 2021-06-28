@@ -15,7 +15,7 @@ FROM adoptopenjdk/openjdk11
 # ENV ARTIFACT_NAME=kiki.jar
 #ENV APP_HOME=/usr/app/
 # temp 이미지에서 build/libs/*.jar파일을 app.jar로 복사
-COPY build/libs/*.jar app.jar 
+COPY build/libs/kiki.jar app.jar 
  
 # 컨테이너 8080 port 노출
 EXPOSE 8080 
