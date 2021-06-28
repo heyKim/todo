@@ -1,11 +1,13 @@
 # 베이스 이미지 +이미지 별칭
 FROM adoptopenjdk/openjdk11 AS TEMP_BUILD_IMAGE  
-COPY build.gradle settings.gradle gradlew .
+COPY build.gradle .
+COPY settings.gradle .
+COPY gradlew .
 COPY gradle gradle
 # RUN ./gradlew build || return 0 
 # 웹 어플리케이션 소스 복사 
 COPY src src
-RUN chmod +x ./gradlew
+RUN chmod +x ./gradlewå
 RUN ./gradlew bootJar
 
 # 베이스 이미지 
