@@ -7,7 +7,7 @@ COPY gradle gradle
 # RUN ./gradlew build || return 0 
 # 웹 어플리케이션 소스 복사 
 COPY src src
-RUN chmod +x ./gradlewå
+RUN chmod +x ./gradlew
 RUN ./gradlew bootJar
 
 # 베이스 이미지 
