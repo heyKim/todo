@@ -21,7 +21,8 @@ configurations {
 }
 
 repositories {
-	mavenCentral()
+	//mavenCentral()
+	maven { url "http://jcenter.bintray.com" }
 }
 
 dependencies {
